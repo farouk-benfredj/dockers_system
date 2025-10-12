@@ -19,4 +19,5 @@ A lightweight Docker container .Built on **Ubuntu**.
 ```bash
 # Build
 docker build -t tag:version .
-docker build -t git-container:1.0 .
+docker run -it --rm -v <host_path>:<mount_path> git-container
+docker run -it -v <mount_path>:/workspace ubuntu bash
