@@ -14,10 +14,10 @@ A lightweight Docker container .Built on **Ubuntu**.
 
 ## Getting Started
 
-### 1. docker stuff:
+### 1. Docker :
 
 ```bash
 # Build
 docker build -t tag:version .
-docker run -it --rm -v <host_path>:<mount_path> git-container
 docker run -it -v <mount_path>:/workspace ubuntu bash
+```
