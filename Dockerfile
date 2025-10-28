@@ -1,7 +1,7 @@
 FROM ubuntu:24.04 AS build
 
 RUN apt update && apt install -y \
-    build-essential cmake git pkg-config libboost-all-dev
+    build-essential cmake git pkg-config libboost-all-dev gdb
 
 WORKDIR /workspace
 VOLUME ["/workspace"]
